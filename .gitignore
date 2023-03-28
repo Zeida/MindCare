@@ -1,17 +1,33 @@
-node_modules/
-.expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
+# Archivos de build de Expo
+/node_modules
+/.expo
+/.expo-shared
+/.expo-localhost-*
 
-# macOS
+# Archivos de build de React Native
+**/ios/Pods
+**/android/app/libs
+**/android/.gradle
+**/android/.idea
+**/android/build
+**/android/gradle
+**/android/gradlew
+**/android/gradlew.bat
+
+# Firebase y otros archivos de configuración
+**/.firebaserc
+**/google-services.json
+**/google-services-desktop.json
+**/functions/.runtimeconfig.json
+/.env
+
+# Otras configuraciones específicas
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de log y de sistema
+*.log
 .DS_Store
-
-# Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
+*.iml
